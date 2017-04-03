@@ -4,6 +4,8 @@ class Gw < Formula
   url "https://github.com/david-truong/gw/archive/v1.0.2.tar.gz"
   sha256 "7033091a6783fa351ca0e4a415500040627ec9a6ce31f353d7809786654af13c"
 
+  depends_on :java => "1.7+"
+
   def install
     system "./gradlew", "build"
     inreplace "brew/gw", "##PREFIX##", "#{prefix}"
