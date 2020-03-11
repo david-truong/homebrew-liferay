@@ -7,8 +7,7 @@ class Gw < Formula
   depends_on :java => "1.7+"
 
   def install
-    system "./gradlew", "build"
-    system "./gradlew", "nativeImage"
+    system "./gradlew", "build", "nativeImage"
     inreplace "brew/gw", "##PREFIX##", "#{prefix}"
   	prefix.install "build/graal/gw"
   	bin.install "brew/gw"
