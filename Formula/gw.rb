@@ -7,6 +7,7 @@ class Gw < Formula
   depends_on :java => "1.8+"
 
   def install
+    ENV["GRADLE_USER_HOME"] = buildpath/".brew_home"
     system "./gradlew", "build", "nativeImage"
     inreplace "brew/gw", "##PREFIX##", "#{prefix}"
   	prefix.install "build/graal/gw"
