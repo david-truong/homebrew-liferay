@@ -1,8 +1,8 @@
 class Gw < Formula
   desc "This project allows you to always call your gradle wrapper if it detects it"
   homepage "https://github.com/david-truong/gw"
-  url "https://github.com/david-truong/gw/archive/v1.0.4.tar.gz"
-  sha256 "54cf18319271b02e7c9cf47aa71e9b74b218c9978ec98c5fe5a67cc1bc4bdaa9"
+  url "https://github.com/david-truong/gw/archive/v1.0.5.tar.gz"
+  sha256 "0e4ee6f4066ca9218909f54d23e1484d876584439c37c9aa6b6c7f416793237d"
 
   depends_on "openjdk@8"
 
