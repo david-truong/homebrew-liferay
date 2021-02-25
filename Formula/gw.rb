@@ -9,8 +9,6 @@ class Gw < Formula
   def install
     ENV["GRADLE_USER_HOME"] = buildpath/".brew_home"
     system "./gradlew", "build"
-    inreplace "brew/gw", "##PREFIX##", "#{prefix}"
-  	prefix.install "build/graal/gw"
-  	bin.install "brew/gw"
+  	bin.install "build/graal/gw"
   end
 end
