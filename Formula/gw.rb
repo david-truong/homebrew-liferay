@@ -4,7 +4,7 @@ class Gw < Formula
   url "https://github.com/david-truong/gw/archive/v1.0.6.tar.gz"
   sha256 "1fdeb6a3fcd94b93a47a32620361f756ca4d049b61d55b65bb45583ca04ee8df"
 
-  depends_on "openjdk"
+  depends_on "openjdk@11"
 
   def install
     ENV["GRADLE_USER_HOME"] = buildpath/".brew_home"

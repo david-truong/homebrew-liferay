@@ -4,7 +4,7 @@ class Blade < Formula
   url "https://releases.liferay.com/tools/blade-cli/2.0.2.201702020520/plugins/com.liferay.blade.cli_2.0.2.201702020520.jar"
   sha256 "b902e82ea4fbff41715e49d6a5e2adf35c05b7f0d59ae8904a57a322a44728ed"
 
-  depends_on "openjdk"
+  depends_on "openjdk@11"
 
   def install
     File.open('blade', 'w') do |f|
