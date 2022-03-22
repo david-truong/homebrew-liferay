@@ -10,10 +10,9 @@ class Blade < Formula
     File.open('blade', 'w') do |f|
     # use "\n" for two lines of text
       f.puts "#!/bin/bash"
-      f.puts "java -jar #{prefix}/com.liferay.blade.cli.jar \"$@\""
+      f.puts "java -jar blade.jar \"$@\""
     end
 
-  	prefix.install "com.liferay.blade.cli_#{version}.jar" => "com.liferay.blade.cli.jar"
   	bin.install "blade"
   end
 end
