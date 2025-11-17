@@ -1,8 +1,8 @@
 class Blade < Formula
   desc "The Blade CLI is the easiest way for Liferay developers to create new Liferay modules."
   homepage "https://github.com/liferay/liferay-blade-cli"
-  url "https://search.maven.org/remotecontent?filepath=com/liferay/blade/com.liferay.blade.cli/4.0.10/com.liferay.blade.cli-4.0.10.jar"
-  sha256 "bfd869e625b51cb2ad2f6a79602ca777dfaba29afefa2128fb5a32bc41dd7bb8"
+  url "https://repo1.maven.org/maven2/com/liferay/blade/com.liferay.blade.cli/7.0.5/com.liferay.blade.cli-7.0.5.jar"
+  sha256 "3f14205fe62a5380de1e6031c58fe1083acb275e98ebc4130173041fbc0538fc"
 
   depends_on "openjdk@11"
 
