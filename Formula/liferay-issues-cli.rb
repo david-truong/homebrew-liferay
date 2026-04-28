@@ -5,21 +5,21 @@
 class LiferayIssuesCli < Formula
   desc "CLI tool for managing Liferay Jira tickets"
   homepage "https://github.com/david-truong/liferay-issues-cli"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/david-truong/liferay-issues-cli/releases/download/v0.2.0/issues_0.2.0_darwin_amd64.tar.gz"
-      sha256 "f1931470e7e71cc6cb69a1c7f2382103254b8f29780702f76e3448d88cbb66ee"
+      url "https://github.com/david-truong/liferay-issues-cli/releases/download/v0.3.0/issues_0.3.0_darwin_amd64.tar.gz"
+      sha256 "80ae2a875441af950e6f85b4d7de221e08d57be2726c7bcc199ee570ef8fc255"
 
       define_method(:install) do
         bin.install "issues"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/david-truong/liferay-issues-cli/releases/download/v0.2.0/issues_0.2.0_darwin_arm64.tar.gz"
-      sha256 "a82ad3efcd906de5500bcf698737eb33976f5dc52870199e8696d3a3054bb1b1"
+      url "https://github.com/david-truong/liferay-issues-cli/releases/download/v0.3.0/issues_0.3.0_darwin_arm64.tar.gz"
+      sha256 "b350f4549654230f7194490b713ed0774e83b21235753f2102347c3bb13a34ed"
 
       define_method(:install) do
         bin.install "issues"
@@ -29,15 +29,15 @@ class LiferayIssuesCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/david-truong/liferay-issues-cli/releases/download/v0.2.0/issues_0.2.0_linux_amd64.tar.gz"
-      sha256 "a429567b60ff9fc55c13e386f0b2a0bcd59d2c722b3d543d2b88859a332fbd7a"
+      url "https://github.com/david-truong/liferay-issues-cli/releases/download/v0.3.0/issues_0.3.0_linux_amd64.tar.gz"
+      sha256 "b87a07eb2f840851541e768fd9e6e28202bf412183a635dccfd259b7a19294f3"
       define_method(:install) do
         bin.install "issues"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/david-truong/liferay-issues-cli/releases/download/v0.2.0/issues_0.2.0_linux_arm64.tar.gz"
-      sha256 "59f17516d1073dbae04dfaa20df3c980aa7c41115f9f74c1657dadcf00d00e28"
+      url "https://github.com/david-truong/liferay-issues-cli/releases/download/v0.3.0/issues_0.3.0_linux_arm64.tar.gz"
+      sha256 "f2de9c1a00bb21b1b8c68de343d65b8864621715f885be613420a5867b86c3b9"
       define_method(:install) do
         bin.install "issues"
       end
