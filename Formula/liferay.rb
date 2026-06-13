@@ -11,7 +11,7 @@ class Liferay < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/david-truong/liferay-portal-cli/releases/download/v1.2.0/liferay_1.2.0_darwin_amd64.tar.gz"
-      sha256 "dac58599322d5755c9b39ae9c689b618eaeff8452b55e6ec3a949e8d10bbfdd7"
+      sha256 "8df90ead7b4592e8710b7c381a40d5cf54b740ae68f7789132996a83919eedf3"
 
       define_method(:install) do
         bin.install "liferay"
@@ -19,7 +19,7 @@ class Liferay < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/david-truong/liferay-portal-cli/releases/download/v1.2.0/liferay_1.2.0_darwin_arm64.tar.gz"
-      sha256 "0eb3bcc850a13e61741c32061c7c3b8752d07392fc0536d4d7e7118ad5581760"
+      sha256 "e594fbb60a703345cb937fa660daa74acbae00764d8874cce4d43d79e7d6102b"
 
       define_method(:install) do
         bin.install "liferay"
@@ -30,14 +30,14 @@ class Liferay < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/david-truong/liferay-portal-cli/releases/download/v1.2.0/liferay_1.2.0_linux_amd64.tar.gz"
-      sha256 "e4b2b86f97ba01f17a3a0a4abbbc9d38fc3b84b958a52e4d3b0471ffa4e4f044"
+      sha256 "73cdee1b9599b78d9a7b1fa1b1e10de30aa72ae0a070aa4d891d92ba7a3a7c53"
       define_method(:install) do
         bin.install "liferay"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/david-truong/liferay-portal-cli/releases/download/v1.2.0/liferay_1.2.0_linux_arm64.tar.gz"
-      sha256 "6f452d19d6af715ad9c3bcf995c768e133c5c8eedc330426004f25ef097ba427"
+      sha256 "fb650e9a2578dd536219d244dbb84acd08176e98609814ac28dad5766e552fee"
       define_method(:install) do
         bin.install "liferay"
       end
