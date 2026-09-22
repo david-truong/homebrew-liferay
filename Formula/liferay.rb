@@ -5,21 +5,21 @@
 class Liferay < Formula
   desc "CLI for Liferay portal development workflows (build modules, manage worktrees, run containers)"
   homepage "https://github.com/david-truong/liferay-portal-cli"
-  version "1.4.0"
+  version "1.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/david-truong/liferay-portal-cli/releases/download/v1.4.0/liferay_1.4.0_darwin_amd64.tar.gz"
-      sha256 "95c211666603c2c2fb491465e56fe9c92a111e8d7f8a24cffcefef68c6a9970b"
+      url "https://github.com/david-truong/liferay-portal-cli/releases/download/v1.5.0/liferay_1.5.0_darwin_amd64.tar.gz"
+      sha256 "541fe0adc5cda02db714f8dd4fc2c7b8bb4c599bcd2ce08a12593343d1fa62d8"
 
       define_method(:install) do
         bin.install "liferay"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/david-truong/liferay-portal-cli/releases/download/v1.4.0/liferay_1.4.0_darwin_arm64.tar.gz"
-      sha256 "57230b63a14600da7608c554f60136bb6f106bdacc91c9b329abb92606b0eb55"
+      url "https://github.com/david-truong/liferay-portal-cli/releases/download/v1.5.0/liferay_1.5.0_darwin_arm64.tar.gz"
+      sha256 "682499319dc11886494d78b4584e2ce959b287dfd71567724dcaffaa1a79fe76"
 
       define_method(:install) do
         bin.install "liferay"
@@ -29,15 +29,15 @@ class Liferay < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/david-truong/liferay-portal-cli/releases/download/v1.4.0/liferay_1.4.0_linux_amd64.tar.gz"
-      sha256 "aa034e04fd4a6c614131d79a17e31bac72dd995ec8f9420745ec156841da131c"
+      url "https://github.com/david-truong/liferay-portal-cli/releases/download/v1.5.0/liferay_1.5.0_linux_amd64.tar.gz"
+      sha256 "768571c04f325f80649b405078025ee9b7aebda1468c406f6b72242617d8ce3a"
       define_method(:install) do
         bin.install "liferay"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/david-truong/liferay-portal-cli/releases/download/v1.4.0/liferay_1.4.0_linux_arm64.tar.gz"
-      sha256 "1abccc3830e1731b9ed8bd4cbb2a5649b68146067ff9e92fd11b2753e62fe7ca"
+      url "https://github.com/david-truong/liferay-portal-cli/releases/download/v1.5.0/liferay_1.5.0_linux_arm64.tar.gz"
+      sha256 "ccd279d420801303d6a940f18f6a742e54638cade8e66acc31394619621a9e49"
       define_method(:install) do
         bin.install "liferay"
       end
